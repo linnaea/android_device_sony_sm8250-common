@@ -454,8 +454,8 @@
         <item>3</item>
     </integer-array>
 
-     <!-- Whether the new Auto Selection Network UI should be shown -->
-     <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
+    <!-- Whether the new Auto Selection Network UI should be shown -->
+    <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
 
     <!-- The default journal mode to use use when Write-Ahead Logging is not active.
          Choices are: OFF, DELETE, TRUNCATE, PERSIST and MEMORY.

@@ -22,6 +22,10 @@ $(call inherit-product, vendor/sony/sm8250-common/sm8250-common-vendor.mk)
 
 TARGET_EXCLUDES_AUDIOFX := true
 
+ifeq ($(WITH_GMS),true)
+GMS_MAKEFILE := ../arm64/arm64-vendor.mk
+endif
+
 # VNDK
 BOARD_API_LEVEL := 29
 BOARD_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)

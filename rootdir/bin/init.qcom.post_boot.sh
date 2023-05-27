@@ -5361,6 +5361,9 @@ case "$target" in
 	setprop vendor.dcvs.prop 1
     echo N > /sys/module/lpm_levels/parameters/sleep_disabled
     configure_memory_parameters
+
+    # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
     ;;
 esac
 

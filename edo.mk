@@ -121,6 +121,7 @@ PRODUCT_PACKAGES += \
     audio.primary.kona \
     audio.r_submix.default \
     audio.usb.default \
+    libldacBT_bco \
     sound_trigger.primary.kona
 
 PRODUCT_PACKAGES += \

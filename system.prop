@@ -19,7 +19,6 @@ persist.vendor.dpm.feature=9
 
 # SkiaGL
 debug.hwui.skia_atrace_enabled=false
-debug.sf.enable_transaction_tracing=false
 
 # IMS
 persist.dbg.volte_avail_ovr=1

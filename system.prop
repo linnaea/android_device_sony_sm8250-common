@@ -17,9 +17,7 @@ persist.vendor.cne.feature=1
 # DPM
 persist.vendor.dpm.feature=9
 
-# SkiaGL
-debug.renderengine.backend=skiaglthreaded
-debug.hwui.renderer=skiagl
+# Debug
 debug.hwui.skia_atrace_enabled=false
 debug.sf.enable_transaction_tracing=false
 renderthread.skia.reduceopstasksplitting=true 

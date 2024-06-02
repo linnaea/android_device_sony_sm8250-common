@@ -212,6 +212,12 @@
          phone object irrespective of this config -->
     <bool name="config_switch_phone_on_voice_reg_state_change">false</bool>
 
+    <!-- Boolean indicating if current platform supports BLE peripheral mode -->
+    <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
+
+    <!-- Boolean indicating if current platform supports HFP inband ringing -->
+    <bool name="config_bluetooth_hfp_inband_ringing_support">true</bool>
+
     <!-- Flag indicating if the speed up audio on mt call code should be executed -->
     <bool name="config_speed_up_audio_on_mt_calls">true</bool>
 
@@ -227,6 +233,11 @@
     <!-- Vibrator pattern for feedback about touching a virtual key -->
     <integer-array name="config_virtualKeyVibePattern">
         <item>0</item>
+        <item>10</item>
+    </integer-array>
+
+    <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
+    <integer-array name="config_keyboardTapVibePattern">
         <item>10</item>
     </integer-array>
 

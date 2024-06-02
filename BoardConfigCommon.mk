@@ -212,7 +212,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2022-10-01
 
-# SEPolicy
+# Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 include hardware/sony/sepolicy/qti/SEPolicy.mk
 

@@ -19,6 +19,7 @@ $(call inherit-product, vendor/sony/sm8250-common/sm8250-common-vendor.mk)
 
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
+OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 
 TARGET_EXCLUDES_AUDIOFX := true
 TARGET_ENABLE_BLUR := true
@@ -108,7 +109,7 @@ PRODUCT_COPY_FILES += \
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
-    FILESYSTEM_TYPE_system=ext4 \
+    FILESYSTEM_TYPE_system=erofs \
     POSTINSTALL_OPTIONAL_system=true
 
 AB_OTA_POSTINSTALL_CONFIG += \

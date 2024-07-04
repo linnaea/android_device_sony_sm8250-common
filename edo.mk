@@ -17,6 +17,9 @@
 # Include common vendor stuff
 $(call inherit-product, vendor/sony/sm8250-common/sm8250-common-vendor.mk)
 
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 TARGET_EXCLUDES_AUDIOFX := true
 TARGET_ENABLE_BLUR := true
 
@@ -522,6 +525,12 @@ PRODUCT_BOOT_JARS += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml
+
+# WiFi firmware symlinks
+PRODUCT_PACKAGES += \
+    firmware_wlanmdsp.otaupdate_symlink \
+    firmware_wlan_mac.bin_symlink \
+    firmware_WCNSS_qcom_cfg.ini_symlink
 
 # XperiaParts
 PRODUCT_PACKAGES += \

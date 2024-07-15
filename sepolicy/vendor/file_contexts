@@ -1,0 +1,8 @@
+# Executable
+/(vendor|system/vendor|odm|vendor/odm)/bin/chg-pwr-service        u:object_r:chg_pwr_service_exec:s0
+
+# HALs
+/(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor\.semc\.hardware\.charger@1\.0-service                  u:object_r:hal_somc_charger_daemon_exec:s0
+
+# Sys files
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/somc_[a-z0-9_]+       u:object_r:vendor_sysfs_smb_device:s0

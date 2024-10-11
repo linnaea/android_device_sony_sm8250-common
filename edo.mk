@@ -484,6 +484,7 @@ PRODUCT_COPY_FILES += \
 
 # Touch
 PRODUCT_PACKAGES += \
+    XperiaTouchSecTS \
     vendor.lineage.touch@1.0-service.sony
 
 # Update engine

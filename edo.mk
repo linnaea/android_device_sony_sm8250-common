@@ -542,4 +542,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XperiaParts
 
+TARGET_SHIPS_SONY_CAMERA := true
+TARGET_SHIPS_SONY_APPS := true
+$(call inherit-product-if-exists, vendor/sony/extra/extra.mk)
+
+PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
